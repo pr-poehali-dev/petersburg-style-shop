@@ -21,7 +21,7 @@ const PAGE_LABELS: Record<string, string> = {
 export default function Header({ page, cartCount, menuOpen, navigate, setMenuOpen }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[hsl(var(--border))]">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
         <nav className="hidden md:flex items-center gap-8">
           {NAV_PAGES.map((p) => (
             <button
@@ -36,7 +36,7 @@ export default function Header({ page, cartCount, menuOpen, navigate, setMenuOpe
 
         <button
           onClick={() => navigate("home")}
-          className="absolute left-1/2 -translate-x-1/2 font-serif text-3xl md:text-4xl font-bold tracking-tight text-foreground hover:opacity-70 transition-opacity leading-none whitespace-nowrap"
+          className="brand-title absolute left-1/2 -translate-x-1/2 font-serif text-3xl md:text-5xl font-bold leading-none whitespace-nowrap"
         >
           Петербургский стиль
         </button>

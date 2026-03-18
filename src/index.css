@@ -83,6 +83,41 @@
     width: 100%;
   }
 
+  .brand-title {
+    letter-spacing: -0.02em;
+    position: relative;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--foreground)) 0%,
+      hsl(var(--foreground)) 40%,
+      hsl(30, 40%, 35%) 50%,
+      hsl(var(--foreground)) 60%,
+      hsl(var(--foreground)) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: background-position 0.6s ease;
+  }
+  .brand-title:hover {
+    background-position: -100% center;
+  }
+  .brand-title::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background: hsl(30, 40%, 45%);
+    transition: width 0.4s ease;
+  }
+  .brand-title:hover::after {
+    width: 100%;
+  }
+
   .product-card-img {
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }

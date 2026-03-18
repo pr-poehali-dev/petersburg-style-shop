@@ -71,7 +71,7 @@ export default function App() {
         setMenuOpen={setMenuOpen}
       />
 
-      <main className="pt-16">
+      <main className="pt-20">
         {page === "home" && (
           <HomePage
             products={PRODUCTS}
