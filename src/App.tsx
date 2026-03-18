@@ -71,11 +71,7 @@ export default function App() {
     <div className="min-h-screen bg-white font-sans">
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[hsl(var(--border))]">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <button onClick={() => navigate("home")} className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-foreground hover:opacity-70 transition-opacity leading-none">
-            Петербургский стиль
-          </button>
-
+        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative">
           <nav className="hidden md:flex items-center gap-8">
             {(["home", "catalog", "about", "contacts"] as Page[]).map((p) => (
               <button
@@ -88,7 +84,11 @@ export default function App() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <button onClick={() => navigate("home")} className="absolute left-1/2 -translate-x-1/2 font-serif text-3xl md:text-4xl font-bold tracking-tight text-foreground hover:opacity-70 transition-opacity leading-none whitespace-nowrap">
+            Петербургский стиль
+          </button>
+
+          <div className="flex items-center gap-4 ml-auto">
             <button onClick={() => navigate("profile")} className="relative hover:opacity-60 transition-opacity">
               <Icon name="User" size={20} />
             </button>
