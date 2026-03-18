@@ -72,7 +72,7 @@ export default function App() {
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[hsl(var(--border))]">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <button onClick={() => navigate("home")} className="font-serif text-xl tracking-wide text-foreground hover:opacity-70 transition-opacity">
+          <button onClick={() => navigate("home")} className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-foreground hover:opacity-70 transition-opacity leading-none">
             Петербургский стиль
           </button>
 
