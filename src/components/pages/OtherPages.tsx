@@ -80,15 +80,13 @@ export function ContactsPage() {
         <div className="space-y-10">
           <div>
             <p className="text-xs uppercase tracking-widest text-foreground/40 mb-3">Адрес</p>
-            <p className="font-serif text-xl font-light">Санкт-Петербург</p>
-            <p className="text-sm text-foreground/60 mt-1">Невский проспект, 28<br />вход со стороны двора</p>
+            <p className="font-serif text-xl font-light">Стерлитамак</p>
+            <p className="text-sm text-foreground/60 mt-1">улица Артёма, 77</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-widest text-foreground/40 mb-3">Часы работы</p>
             <div className="space-y-1 text-sm text-foreground/70">
-              <p>Понедельник — Пятница: 10:00 – 20:00</p>
-              <p>Суббота: 11:00 – 19:00</p>
-              <p>Воскресенье: 12:00 – 18:00</p>
+              <p>Ежедневно: 10:00 – 20:00</p>
             </div>
           </div>
           <div>
